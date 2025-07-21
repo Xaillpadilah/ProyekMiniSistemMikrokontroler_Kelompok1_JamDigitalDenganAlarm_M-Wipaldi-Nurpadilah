@@ -1,0 +1,33 @@
+name = "Gas Detector with Blynk"
+microcontroller = "esp8266"
+
+[[components]]
+type = "led"
+id = "led"
+pin = "D7"
+
+[[components]]
+type = "buzzer"
+id = "buzzer"
+pin = "D6"
+
+[[components]]
+type = "relay"
+id = "relay"
+pin = "D5"
+
+[[components]]
+type = "sensor"
+subtype = "mq2"
+id = "mq2"
+pin = "A0"
+
+[[components]]
+type = "lcd"
+subtype = "i2c"
+id = "lcd"
+address = "0x27"
+rows = 4
+cols = 20
+sda = "D2"
+scl = "D1"
